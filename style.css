@@ -1,0 +1,118 @@
+:root {
+  /* --main-green-color: #2ecc71;
+  --main-purple-color: #8e44ad; */
+
+  --main-green-color: #2ecc71;
+  /* --main-purple-color: #9b59b6; */
+
+  --main-purple-color: #6c3483;
+}
+
+body {
+  background-color: var(--main-green-color);
+}
+
+header {
+  display: grid;
+  grid-row: 1;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 5fr 1fr;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px;
+  border-radius: 60px;
+}
+
+header nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-item {
+  color: var(--main-purple-color);
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.menu-item:hover {
+  border-bottom: 4px solid var(--main-purple-color);
+  font-weight: 700;
+}
+
+.menu-item + .menu-item {
+  margin-left: 15px;
+}
+
+.logo {
+  background-color: var(--main-purple-color);
+  color: white;
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 50px;
+  width: fit-content;
+}
+
+.contact-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: var(--main-purple-color);
+  padding: 10px 20px;
+  border: 2px solid var(--main-purple-color);
+  border-radius: 55px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.contact-inner img {
+  width: 40px;
+  height: 40px;
+}
+
+.big-block {
+  background-color: var(--main-green-color);
+  background-color: var(--main-purple-color);
+  height: 500px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  padding: 20px;
+}
+
+.text-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.text-block span:nth-child(1) {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2ecc70;
+  font-size: 7rem;
+}
+
+.text-block span:nth-child(2) {
+  font-size: 4rem;
+}
+
+.image-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-block img {
+  transform: scale(1.25);
+}
