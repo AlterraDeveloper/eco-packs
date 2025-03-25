@@ -22,7 +22,7 @@ body {
 header {
   display: grid;
   grid-row: 1;
-  grid-template-rows: 1fr 200px;
+  grid-template-rows: 1fr 250px;
   grid-template-columns: 1fr 5fr;
   padding: 30px 60px 20px 60px;
   align-items: center;
@@ -100,22 +100,32 @@ header nav {
 
 .text-block {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  flex-direction: column;
   color: white;
-  font-size: 7rem;
-  text-transform: uppercase;
-  gap: 20px;
 }
 
-.text-block span:nth-child(1) {
+.text-block div:first-child {
+  display: flex;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 7rem;
+}
+
+.text-block div:first-child span:nth-child(1) {
   font-weight: 800;
   color: #2ecc70;
 }
 
-.text-block span:nth-child(2) {
+.text-block div:first-child span:nth-child(2) {
   color: rgba(0, 0, 0, 0.5);
   color: var(--main-purple-color);
+}
+
+.text-block div:last-child {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 3rem;
 }
 
 .big-block {
@@ -158,4 +168,68 @@ header nav {
 
 .product-card span {
   font-size: 1.5rem;
+}
+
+.products-switcher {
+  background-color: white;
+  width: 75%;
+  height: 70px;
+  align-self: center;
+  margin: 50px 0px;
+  display: flex;
+  border-radius: 40px;
+  position: relative;
+  padding: 10px;
+}
+
+.products-switcher .switches {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.products-switcher .toggle {
+  height: 70px;
+  width: calc(25% - 5px);
+  position: absolute;
+  top: 50%;
+  border-radius: 40px;
+  background-color: var(--main-green-color);
+  z-index: 1;
+  transition: transform 0.5s ease-in-out;
+}
+
+.products-switcher .switches input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.products-switcher .switches label {
+  z-index: 10;
+  width: 25%;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.85rem;
+}
+
+.products-switcher .switches label:has(input[type="radio"]:checked) {
+  color: var(--main-purple-color);
+}
+
+.products-switcher .switches:has(#switch-bags:checked) ~ .toggle {
+  transform: translate(calc(100% * 0), -50%);
+}
+
+.products-switcher .switches:has(#switch-freezer:checked) ~ .toggle {
+  transform: translate(calc(100% * 1), -50%);
+}
+
+.products-switcher .switches:has(#switch-gloves:checked) ~ .toggle {
+  transform: translate(calc(100% * 2), -50%);
+}
+
+.products-switcher .switches:has(#switch-cloth:checked) ~ .toggle {
+  transform: translate(calc(100% * 3), -50%);
 }
