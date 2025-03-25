@@ -10,6 +10,10 @@
 
 body {
   background-color: var(--main-green-color);
+  background-image: url("./images/backgroung.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
 }
 
 header {
@@ -49,12 +53,16 @@ header nav {
 }
 
 .logo {
-  background-color: var(--main-purple-color);
+  background-color: #6cbf65;
   color: white;
   padding: 10px 20px;
   font-size: 2rem;
   border-radius: 50px;
   width: fit-content;
+}
+
+.logo img{
+  width: 200px;
 }
 
 .contact-inner {
@@ -114,5 +122,6 @@ header nav {
 }
 
 .image-block img {
-  transform: scale(1.25);
+  /* transform: scale(1.05); */
+  /* width: 200px; */
 }
