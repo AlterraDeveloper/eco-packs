@@ -187,7 +187,6 @@ header nav {
   margin: 50px 0px;
   display: flex;
   border-radius: 40px;
-  position: relative;
   padding: 10px;
 }
 
@@ -196,17 +195,19 @@ header nav {
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  position: relative;
 }
 
-.categories-switcher .toggle {
+.categories-switcher .switches .toggle {
   height: 70px;
-  width: calc(20% - 5px);
+  width: 20%;
   position: absolute;
   border-radius: 40px;
-  top: 50%;
   background-color: var(--main-green-color);
   z-index: 1;
   transition: transform 0.5s ease-in-out;
+  top: 50%;
+  left: 0;
 }
 
 .categories-switcher .switches input {
@@ -219,32 +220,34 @@ header nav {
   z-index: 10;
   width: 20%;
   cursor: pointer;
-  text-align: center;
   font-size: 1.45rem;
   padding: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .categories-switcher .switches label:has(input[type="radio"]:checked) {
   color: var(--main-purple-color);
 }
 
-.categories-switcher .switches:has(#switch-category-1:checked) ~ .toggle {
+.categories-switcher .switches:has(#switch-category-1:checked) .toggle {
   transform: translate(calc(100% * 0), -50%);
 }
 
-.categories-switcher .switches:has(#switch-category-2:checked) ~ .toggle {
+.categories-switcher .switches:has(#switch-category-2:checked) .toggle {
   transform: translate(calc(100% * 1), -50%);
 }
 
-.categories-switcher .switches:has(#switch-category-3:checked) ~ .toggle {
+.categories-switcher .switches:has(#switch-category-3:checked) .toggle {
   transform: translate(calc(100% * 2), -50%);
 }
 
-.categories-switcher .switches:has(#switch-category-4:checked) ~ .toggle {
+.categories-switcher .switches:has(#switch-category-4:checked) .toggle {
   transform: translate(calc(100% * 3), -50%);
 }
 
-.categories-switcher .switches:has(#switch-category-5:checked) ~ .toggle {
+.categories-switcher .switches:has(#switch-category-5:checked) .toggle {
   transform: translate(calc(100% * 4), -50%);
 }
 

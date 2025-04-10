@@ -57,7 +57,7 @@
   }
 
   .toggle {
-    width: 90% !important;
+    width: 100% !important;
     top: 0 !important;
     height: 60px !important;
   }
@@ -72,13 +72,10 @@
   .categories-switcher .switches label {
     width: 100%;
     font-size: 1.35rem;
-    padding: 15px 0;
+    padding: 0;
+    height: 60px;
+    
   }
-
-  /* .categories-switcher .switches label:has(input[type="radio"]:checked) {
-    background-color: var(--main-green-color);
-    border-radius: 40px;
-  } */
 
   .slider-footer {
     width: 100%;
@@ -89,24 +86,24 @@
     width: 50%;
   }
 
-  .categories-switcher .switches:has(#switch-category-1:checked) ~ .toggle {
-    transform: translate(0%, calc(60px * 0));
+  .categories-switcher .switches:has(#switch-category-1:checked) .toggle {
+    transform: translate(0, calc(100% * 0));
   }
 
-  .categories-switcher .switches:has(#switch-category-2:checked) ~ .toggle {
-    transform: translate(0%, calc(60px * 1));
+  .categories-switcher .switches:has(#switch-category-2:checked) .toggle {
+    transform: translate(0, calc(100% * 1))
   }
 
-  .categories-switcher .switches:has(#switch-category-3:checked) ~ .toggle {
-    transform: translate(0%, calc(60px * 2));
+  .categories-switcher .switches:has(#switch-category-3:checked) .toggle {
+    transform: translate(0, calc(100% * 2))
   }
 
-  .categories-switcher .switches:has(#switch-category-4:checked) ~ .toggle {
-    transform: translate(0%, calc(60px * 3));
+  .categories-switcher .switches:has(#switch-category-4:checked) .toggle {
+    transform: translate(0, calc(100% * 3))
   }
 
-  .categories-switcher .switches:has(#switch-category-5:checked) ~ .toggle {
-    transform: translate(0%, calc(60px * 4 ));
+  .categories-switcher .switches:has(#switch-category-5:checked) .toggle {
+    transform: translate(0, calc(100% * 4))
   }
 
   .slider-nav {
