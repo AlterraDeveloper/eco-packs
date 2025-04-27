@@ -300,35 +300,35 @@ header nav {
 }
 
 .products .slider .slider-item:nth-child(1) {
-  background-image: url("../images/50х60\ \(бел.\ с\ зав.\).jpg");
+  background-image: url("../images/packs/55х70\ \(бел.\ с\ зав.\).jpg");
 }
 
 .products .slider .slider-item:nth-child(2) {
-  background-image: url("../images/55х70\ \(25pcs\).jpg");
+  background-image: url("../images/packs/55х70\ \(25pcs\).jpg");
 }
 
 .products .slider .slider-item:nth-child(3) {
-  background-image: url("../images/55х70\ \(35pcs\).jpg");
+  background-image: url("../images/packs/55х70\ \(35pcs\).jpg");
 }
 
 .products .slider .slider-item:nth-child(4) {
-  background-image: url("../images/55х70\ \(бел.\ с\ зав.\).jpg");
+  background-image: url("../images/packs/55х70\ \(бел.\ с\ зав.\).jpg");
 }
 
 .products .slider .slider-item:nth-child(5) {
-  background-image: url("../images/65х80.jpg");
+  background-image: url("../images/packs/65х80.jpg");
 }
 
 .products .slider .slider-item:nth-child(6) {
-  background-image: url("../images/100х130.jpg");
+  background-image: url("../images/packs/100х130.jpg");
 }
 
 .products .slider .slider-item:nth-child(7) {
-  background-image: url("../images/70х90.jpg");
+  background-image: url("../images/packs/70х90.jpg");
 }
 
 .products .slider .slider-item:nth-child(8) {
-  background-image: url("../images/80х110.jpg");
+  background-image: url("../images/packs/80х110.jpg");
 }
 
 .slider-footer {
