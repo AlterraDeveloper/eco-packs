@@ -80,7 +80,7 @@ function updateSlider() {
   for (const product of products) {
     const div = document.createElement("div");
     div.className = "slider-item";
-    div.style.backgroundImage = `url("${product.imgPath}")`;
+    div.style.backgroundImage = `url('${product.imgPath}')`;
     div.dataset.text = product.text;
     slider.append(div);
   }
