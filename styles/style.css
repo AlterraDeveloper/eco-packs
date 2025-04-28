@@ -2,7 +2,7 @@
   --main-green-color: #6cbf65;
   --main-purple-color: #90005f;
 
-  --slides-per-page: 5;
+  --slides-per-page: 3;
 }
 
 html {
@@ -14,7 +14,7 @@ body {
   background-image: url("../images/backgroung2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: "Comfortaa";
+  font-family: "Comfortaa", sans-serif;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -299,38 +299,6 @@ header nav {
   height: 460px;
 }
 
-.products .slider .slider-item:nth-child(1) {
-  background-image: url("../images/packs/55х70\ \(бел.\ с\ зав.\).jpg");
-}
-
-.products .slider .slider-item:nth-child(2) {
-  background-image: url("../images/packs/55х70\ \(25pcs\).jpg");
-}
-
-.products .slider .slider-item:nth-child(3) {
-  background-image: url("../images/packs/55х70\ \(35pcs\).jpg");
-}
-
-.products .slider .slider-item:nth-child(4) {
-  background-image: url("../images/packs/55х70\ \(бел.\ с\ зав.\).jpg");
-}
-
-.products .slider .slider-item:nth-child(5) {
-  background-image: url("../images/packs/65х80.jpg");
-}
-
-.products .slider .slider-item:nth-child(6) {
-  background-image: url("../images/packs/100х130.jpg");
-}
-
-.products .slider .slider-item:nth-child(7) {
-  background-image: url("../images/packs/70х90.jpg");
-}
-
-.products .slider .slider-item:nth-child(8) {
-  background-image: url("../images/packs/80х110.jpg");
-}
-
 .slider-footer {
   display: flex;
   align-items: center;
@@ -384,14 +352,20 @@ footer {
   position: relative;
   width: 100%;
   overflow: hidden;
-  mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
 }
 
 .scroll-container {
   overflow: hidden;
   white-space: nowrap;
-  animation: scrollText 25s linear infinite ;
+  animation: scrollText 25s linear infinite;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
