@@ -7,34 +7,34 @@ class ProductItem {
 
 const productsBags = [
   new ProductItem(
-    "../images/products_bags/55х70 (бел. с зав.).jpg",
+    "./images/products_bags/55х70 (бел. с зав.).jpg",
     "White bags"
   ),
   new ProductItem(
-    "../images/products_bags/55х70 (25pcs).jpg",
+    "./images/products_bags/55х70 (25pcs).jpg",
     "55 x 70 bags 25 pcs"
   ),
   new ProductItem(
-    "../images/products_bags/55х70 (35pcs).jpg",
+    "./images/products_bags/55х70 (35pcs).jpg",
     "55 x 70 bags 35 pcs"
   ),
 ];
 
 const productsGarbage = [
   new ProductItem(
-    "../images/products_garbage/Photoroom_20250329_083627.jpeg",
+    "./images/products_garbage/Photoroom_20250329_083627.jpeg",
     "ASIA 30L"
   ),
   new ProductItem(
-    "../images/products_garbage/Photoroom_20250329_083648.jpeg",
+    "./images/products_garbage/Photoroom_20250329_083648.jpeg",
     "ASIA 60L"
   ),
   new ProductItem(
-    "../images/products_garbage/Photoroom_20250329_083748.jpeg",
+    "./images/products_garbage/Photoroom_20250329_083748.jpeg",
     "IDEAL 30L"
   ),
   new ProductItem(
-    "../images/products_garbage/Photoroom_20250329_083814.jpeg",
+    "./images/products_garbage/Photoroom_20250329_083814.jpeg",
     "IDEAL 60L"
   ),
 ];
