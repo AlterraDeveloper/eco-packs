@@ -25,7 +25,7 @@ header {
   grid-row: 1;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: 1fr 5fr;
-  padding: 30px 60px 20px 60px;
+  padding: 30px 60px 40px 60px;
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -332,29 +332,14 @@ header nav {
   width: 30px;
 }
 
-footer {
-  background-color: var(--main-purple-color);
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
-  padding: 25px;
-}
-
-.plain-block {
-  border: 3px dashed black;
-  border-radius: 20px;
-  height: 50%;
-  width: calc(100% / 3 - 50px);
-}
 
 #partners {
-  height: 500px;
-  padding: 0px 100px;
+  height: 600px;
+  padding: 0px 80px;
 }
 
 .partners-list {
+  margin: 40px 0;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -439,4 +424,22 @@ footer {
 .scroll-container .partner-item:nth-child(16) {
   background-image: url("../images/partners/p13.png");
   background-size: 22em;
+}
+
+
+footer {
+  background-color: var(--main-purple-color);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 25px;
+}
+
+.plain-block {
+  border: 3px dashed black;
+  border-radius: 20px;
+  height: 50%;
+  width: calc(100% / 3 - 50px);
 }

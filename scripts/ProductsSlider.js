@@ -1,23 +1,27 @@
 class ProductItem {
   constructor(imgPath, text) {
     this.imgPath = imgPath;
-    this.text = text;
+    this.text = text || "Требуется описание";
   }
 }
 
 const productsBags = [
-  new ProductItem(
-    "./images/products_bags/55х70 (бел. с зав.).jpg",
-    "White bags"
-  ),
-  new ProductItem(
-    "./images/products_bags/55х70 (25pcs).jpg",
-    "55 x 70 bags 25 pcs"
-  ),
-  new ProductItem(
-    "./images/products_bags/55х70 (35pcs).jpg",
-    "55 x 70 bags 35 pcs"
-  ),
+  new ProductItem("./images/products_bags/100х130.jpg", "100 x 130"),
+  new ProductItem("./images/products_bags/55х70 (бел. с зав.).jpg", "55 x 70"),
+  new ProductItem("./images/products_bags/65х80 (с зав.).jpg", "65 x 80"),
+  new ProductItem("./images/products_bags/90х130.jpg", "90 x 130"),
+  new ProductItem("./images/products_bags/50х60 (бел. с зав.).jpg", "50 x 60"),
+  new ProductItem("./images/products_bags/55х70 (с зав.).jpg", "55 x 70"),
+  new ProductItem("./images/products_bags/70х90.jpg", "70 x 90"),
+  new ProductItem("./images/products_bags/Freezer Bag 250.jpg", " freezer 250"),
+  new ProductItem("./images/products_bags/55х70 (25pcs).jpg", "55 x 70"),
+  new ProductItem("./images/products_bags/65х80.jpg", "65 x 80"),
+  new ProductItem("./images/products_bags/70х90 (с зав.).jpg", "70 x 90"),
+
+  new ProductItem("./images/products_bags/Freezer Bag 500.jpg", "freezer 500"),
+  new ProductItem("./images/products_bags/55х70 (35pcs).jpg", "55 x 70"),
+  new ProductItem("./images/products_bags/65х80 (бел. с зав.).jpg", "65 x 80"),
+  new ProductItem("./images/products_bags/80х110.jpg", "80 x 110"),
 ];
 
 const productsGarbage = [
@@ -37,6 +41,43 @@ const productsGarbage = [
     "./images/products_garbage/Photoroom_20250329_083814.jpeg",
     "IDEAL 60L"
   ),
+];
+
+const productsDishes = [
+  new ProductItem("./images/products_dish/Перчатки.jpg", "Перчатки"),
+
+  new ProductItem(
+    "./images/products_dish/Скатерть Кристалл .jpg",
+    "Скатерть Кристалл"
+  ),
+
+  new ProductItem(
+    "./images/products_dish/Скатерть Хлопок.jpg",
+    "Скатерть Хлопок"
+  ),
+
+  new ProductItem("./images/products_dish/Скатерть Шелк.jpg", "Скатерть Шелк"),
+];
+
+const productsStretch = [
+  new ProductItem(
+    "./images/products_stretch/Photoroom_20250329_083722.jpeg",
+    ""
+  ),
+
+  new ProductItem(
+    "./images/products_stretch/product_stretch_1000x100px.jpg",
+    ""
+  ),
+
+  new ProductItem("./images/products_stretch/Strejch-plenka-mini-roll.jpg", ""),
+];
+
+
+const productsFoil = [
+  new ProductItem("./images/products_foil/Photoroom_20250329_083448.jpeg", ""),
+  new ProductItem("./images/products_foil/Photoroom_20250329_083537.jpeg", ""),
+  new ProductItem("./images/products_foil/Photoroom_20250329_083557.jpeg", ""),
 ];
 
 let products = [];
@@ -112,11 +153,13 @@ categoriesSwitches.forEach((categorySwitch) => {
         products = productsGarbage;
         break;
       case "switch-category-3":
-        products = [];
+        products = productsDishes;
         break;
       case "switch-category-4":
+        products = productsStretch;
         break;
       case "switch-category-5":
+        products = productsFoil;
         break;
     }
     updateSlider();
