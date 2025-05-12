@@ -120,7 +120,6 @@ const productsStretch = [
 
   new ProductItem(
     "./images/products_stretch/Strejch-plenka-mini-roll.jpg",
-
     [
       "Промышленная (техническая) стрейч-пленка для паллетайзера.",
       "Максимальная надежность для вашей упаковки.",
@@ -186,8 +185,7 @@ sliderPrevBtn.onclick = () => {
   const activeSlide = slider.querySelector(".active");
   activeSlide.classList.remove("active");
   slider.children[currentSlide - 1].classList.add("active");
-  productDescription.textContent =
-    slider.children[currentSlide - 1].dataset.text;
+  productDescription.innerHTML = slider.children[currentSlide - 1].dataset.text;
 };
 
 function updateSlider() {
