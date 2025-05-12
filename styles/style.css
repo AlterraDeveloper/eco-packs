@@ -287,12 +287,12 @@ header .contact-inner {
 .products .slider .slider-item {
   min-width: calc(100% / var(--slides-per-page));
   height: 420px;
-  border-radius: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
   opacity: 0.15;
   transition: all 0.75s ease-in-out;
+  border-radius: 20px;
 }
 
 .products .slider .slider-item.active {
@@ -306,11 +306,52 @@ header .contact-inner {
   height: 460px;
 }
 
+.products .slider .slider-item .badge {
+  display: none;
+  position: absolute;
+  top: 50px;
+  padding: 20px 30px;
+  background: var(--main-green-color);
+  box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
+  font-size: 1.75rem;
+  color: var(--main-purple-color);
+  width: max-content;
+  font-weight: 900;
+  transition: all 0.75s ease-in-out;
+}
+
+.products .slider .slider-item.active .badge {
+  display: block;
+}
+.products .slider .slider-item.active .badge:before,
+.badge:after {
+  content: "";
+  position: absolute;
+}
+.badge:before {
+  width: 7px;
+  height: 100%;
+  top: 0;
+  left: -7px;
+  padding: 0 0 7px;
+  background: inherit;
+  border-radius: 5px 0 0 15px;
+}
+.badge:after {
+  width: 5px;
+  height: 5px;
+  bottom: -5px;
+  left: -4.5px;
+  background: var(--main-purple-color);
+  opacity: 0.35;
+  border-radius: 5px 0 0 5px;
+}
+
 .slider-footer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 60%;
+  justify-content: center;
+  width: 85%;
   margin-bottom: 30px;
 }
 
@@ -323,20 +364,32 @@ header .contact-inner {
 
 .slider-nav {
   background-color: white;
-  padding: 15px 25px;
+  padding: 40px 60px;
   border-radius: 50%;
   text-align: center;
-  top: 50%;
   cursor: pointer;
   user-select: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  box-shadow: 10px 2px 30px rgba(0, 0, 0, 0.3);
 }
 
 .slider-nav img {
-  height: 55px;
-  width: 30px;
+  height: 100px;
+  width: 70px;
+}
+
+#slider-nav-prev {
+  left: 200px;
+  transform: translate(0%, -50%);
+}
+
+#slider-nav-next {
+  right: 200px;
+  transform: translate(0%, -50%);
 }
 
 #partners {
@@ -467,7 +520,7 @@ footer nav .menu-item {
   flex-direction: column;
 }
 
-.footer-block.contacts .contacts-title{
+.footer-block.contacts .contacts-title {
   font-size: 2rem;
   color: white;
   margin-bottom: 50px;
@@ -480,7 +533,7 @@ footer .contact-inner {
   padding: 10px 20px;
 }
 
-#developer{
+#developer {
   background-color: black;
   color: white;
   text-align: center;

@@ -39,6 +39,13 @@
     width: 90%;
   }
 
+  header .contact-inner {
+    color: var(--main-purple-color);
+    border: 2px solid var(--main-purple-color);
+    font-size: 1.25rem;
+    padding: 10px 15px;
+  }
+
   .big-block {
     margin: 10px;
   }
@@ -76,7 +83,19 @@
     height: 60px;
   }
 
-  
+  .products .slider {
+    height: 380px;
+    border-radius: 40px;
+    overflow: visible;
+    margin: 40px 0 30px 0;
+    background-color: white;
+  }
+
+  .products .slider .slider-item:has(+ .slider-item.active),
+  .products .slider .slider-item.active + .slider-item {
+    opacity: 0;
+  }
+
   .slider-nav {
     font-size: 1.5rem;
     background-color: white;
@@ -84,11 +103,22 @@
     border-radius: 50%;
     cursor: pointer;
     user-select: none;
+    border: 2px solid var(--main-purple-color);
   }
 
   .slider-nav img {
     height: 45px;
     width: 25px;
+  }
+
+  #slider-nav-prev {
+    left: -25px;
+    transform: translate(0%, -50%);
+  }
+
+  #slider-nav-next {
+    right: -25px;
+    transform: translate(0%, -50%);
   }
 
   .slider-footer {
@@ -97,7 +127,7 @@
 
   .products .products-description {
     font-size: 1.5rem;
-    width: 50%;
+    width: 100%;
   }
 
   .categories-switcher .switches:has(#switch-category-1:checked) .toggle {
@@ -121,9 +151,8 @@
   }
 
   .products .slider .slider-item {
-    background-size: cover;
+    background-size: contain;
   }
-
 
   #partners {
     height: 400px;
@@ -131,13 +160,30 @@
   }
 
   .partners-list {
-    mask: none;
-    -webkit-mask: none;
+    margin: 20px 0;
+    mask: linear-gradient(
+      90deg,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 10%,
+      white 90%,
+      transparent
+    );
   }
 
   .partner-item {
     height: 300px;
     width: 75vw;
+  }
+
+  #partners .title {
+    margin: 10px 0px 20px 0px;
   }
 
   .scroll-container .partner-item:nth-child(1),
@@ -179,5 +225,25 @@
   .scroll-container .partner-item:nth-child(16) {
     background-image: url("../images/partners/p13.png");
     background-size: 18em;
+  }
+
+  footer {
+    height: 600px;
+    padding: 25px;
+    gap: 50px;
+  }
+
+  .footer-block {
+    width: 100%;
+  }
+
+  footer .contact-inner {
+    font-size: 1.25rem;
+    padding: 7px 10px;
+  }
+
+  .footer-block.contacts .contacts-title {
+    font-size: 1.65rem;
+    margin-bottom: 20px;
   }
 }

@@ -1,30 +1,69 @@
 class ProductItem {
-  constructor(imgPath, text) {
+  constructor(imgPath, text, tag = null) {
     this.imgPath = imgPath;
     this.text = text || "Требуется описание";
+    this.tag = tag;
   }
 }
 
-const productsBags = [
-  new ProductItem("./images/products_bags/100х130.jpg", "100 x 130"),
-  new ProductItem("./images/products_bags/55х70 (бел. с зав.).jpg", "55 x 70"),
-  new ProductItem("./images/products_bags/65х80 (с зав.).jpg", "65 x 80"),
-  new ProductItem("./images/products_bags/90х130.jpg", "90 x 130"),
-  new ProductItem("./images/products_bags/50х60 (бел. с зав.).jpg", "50 x 60"),
-  new ProductItem("./images/products_bags/55х70 (с зав.).jpg", "55 x 70"),
-  new ProductItem("./images/products_bags/70х90.jpg", "70 x 90"),
-  new ProductItem("./images/products_bags/Freezer Bag 250.jpg", " freezer 250"),
-  new ProductItem("./images/products_bags/55х70 (25pcs).jpg", "55 x 70"),
-  new ProductItem("./images/products_bags/65х80.jpg", "65 x 80"),
-  new ProductItem("./images/products_bags/70х90 (с зав.).jpg", "70 x 90"),
+const bioTag = "БИО разлагаемый";
+const industrialTag = "Промышленная";
+const domesticTag = "Пищевая";
 
+const productsBags = [
+  new ProductItem("./images/products_bags/Freezer Bag 250.jpg", " freezer 250"),
   new ProductItem("./images/products_bags/Freezer Bag 500.jpg", "freezer 500"),
-  new ProductItem("./images/products_bags/55х70 (35pcs).jpg", "55 x 70"),
-  new ProductItem("./images/products_bags/65х80 (бел. с зав.).jpg", "65 x 80"),
-  new ProductItem("./images/products_bags/80х110.jpg", "80 x 110"),
+  new ProductItem("./images/products_bags/Пакет Клубничка.jpg"),
+  new ProductItem("./images/products_bags/Пакет Мк.jpg"),
+  new ProductItem("./images/products_bags/Пакет Шиваки.webp"),
 ];
 
 const productsGarbage = [
+  new ProductItem("./images/products_bags/100х130.jpg", "100 x 130", bioTag),
+  new ProductItem(
+    "./images/products_bags/55х70 (бел. с зав.).jpg",
+    "55 x 70",
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_bags/65х80 (с зав.).jpg",
+    "65 x 80",
+    bioTag
+  ),
+  new ProductItem("./images/products_bags/90х130.jpg", "90 x 130", bioTag),
+  new ProductItem(
+    "./images/products_bags/50х60 (бел. с зав.).jpg",
+    "50 x 60",
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_bags/55х70 (с зав.).jpg",
+    "55 x 70",
+    bioTag
+  ),
+  new ProductItem("./images/products_bags/70х90.jpg", "70 x 90", bioTag),
+  new ProductItem(
+    "./images/products_bags/55х70 (25pcs).jpg",
+    "55 x 70",
+    bioTag
+  ),
+  new ProductItem("./images/products_bags/65х80.jpg", "65 x 80", bioTag),
+  new ProductItem(
+    "./images/products_bags/70х90 (с зав.).jpg",
+    "70 x 90",
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_bags/55х70 (35pcs).jpg",
+    "55 x 70",
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_bags/65х80 (бел. с зав.).jpg",
+    "65 x 80",
+    bioTag
+  ),
+  new ProductItem("./images/products_bags/80х110.jpg", "80 x 110", bioTag),
   new ProductItem(
     "./images/products_garbage/Photoroom_20250329_083627.jpeg",
     "ASIA 30L"
@@ -44,40 +83,77 @@ const productsGarbage = [
 ];
 
 const productsDishes = [
-  new ProductItem("./images/products_dish/Перчатки.jpg", "Перчатки"),
-
-  new ProductItem(
-    "./images/products_dish/Скатерть Кристалл .jpg",
-    "Скатерть Кристалл"
-  ),
-
-  new ProductItem(
-    "./images/products_dish/Скатерть Хлопок.jpg",
-    "Скатерть Хлопок"
-  ),
-
-  new ProductItem("./images/products_dish/Скатерть Шелк.jpg", "Скатерть Шелк"),
+  new ProductItem("./images/products_dish/3792.jpg", ""),
+  new ProductItem("./images/products_dish/3793.jpg", ""),
+  new ProductItem("./images/products_dish/3801.jpg", ""),
+  new ProductItem("./images/products_dish/3802.jpg", ""),
+  new ProductItem("./images/products_dish/3803.jpg", ""),
+  new ProductItem("./images/products_dish/3804.jpg", ""),
+  new ProductItem("./images/products_dish/3805.jpg", ""),
 ];
 
 const productsStretch = [
   new ProductItem(
     "./images/products_stretch/Photoroom_20250329_083722.jpeg",
-    ""
+    "",
+    domesticTag
   ),
 
   new ProductItem(
     "./images/products_stretch/product_stretch_1000x100px.jpg",
-    ""
+    [
+      "Промышленная (техническая) стрейч-пленка для ручной обмотки.",
+      "Описание:",
+      "Промышленная стрейч-пленка первого сорта, предназначенная для ручной упаковки грузов на паллетах. Обеспечивает надежную фиксацию, защиту от пыли, влаги и механических повреждений при транспортировке и хранении.",
+      "Ширина: 500 мм",
+      "Толщина: 23 мкм",
+      "Вес брутто: 3,0 кг",
+      "Сорт: Первый",
+      "Материал: Полиэтилен (LLDPE)",
+      "Тип намотки: Ручная",
+      "Цвет: Прозрачный",
+      "Удлинение: до 500%",
+      "Назначение: упаковка паллет, защита промышленной продукции",
+    ].join("<br/><br/>"),
+    industrialTag
   ),
 
-  new ProductItem("./images/products_stretch/Strejch-plenka-mini-roll.jpg", ""),
-];
+  new ProductItem(
+    "./images/products_stretch/Strejch-plenka-mini-roll.jpg",
 
+    [
+      "Промышленная (техническая) стрейч-пленка для паллетайзера.",
+      "Максимальная надежность для вашей упаковки.",
+      "Надежная и прочная стрейч-пленка первого сорта — идеальное решение для обмотки паллет и тяжелых грузов. Благодаря высокой эластичности и плотности, она надежно фиксирует продукцию, защищая от влаги, пыли и механических повреждений. Отличный выбор для логистики, складов и производственных предприятий.",
+      "Ширина: 500 мм",
+      "Толщина: 23 мкм",
+      "Вес брутто: 16,9 кг",
+      "Сорт: Первый",
+      "Материал: Полиэтилен (LLDPE)",
+      "Тип намотки: Машинная",
+      "Цвет: Прозрачный",
+      "Удлинение: до 300%",
+      "Назначение: упаковка паллет, защита промышленной продукции",
+    ].join("<br/><br/>"),
+
+    industrialTag
+  ),
+];
 
 const productsFoil = [
   new ProductItem("./images/products_foil/Photoroom_20250329_083448.jpeg", ""),
   new ProductItem("./images/products_foil/Photoroom_20250329_083537.jpeg", ""),
   new ProductItem("./images/products_foil/Photoroom_20250329_083557.jpeg", ""),
+  new ProductItem("./images/products_dish/Перчатки.jpg", "Перчатки"),
+  new ProductItem(
+    "./images/products_dish/Скатерть Кристалл .jpg",
+    "Скатерть Кристалл"
+  ),
+  new ProductItem(
+    "./images/products_dish/Скатерть Хлопок.jpg",
+    "Скатерть Хлопок"
+  ),
+  new ProductItem("./images/products_dish/Скатерть Шелк.jpg", "Скатерть Шелк"),
 ];
 
 let products = [];
@@ -99,8 +175,7 @@ sliderNextBtn.onclick = () => {
   const activeSlide = slider.querySelector(".active");
   activeSlide.classList.remove("active");
   slider.children[currentSlide - 1].classList.add("active");
-  productDescription.textContent =
-    slider.children[currentSlide - 1].dataset.text;
+  productDescription.innerHTML = slider.children[currentSlide - 1].dataset.text;
 };
 
 sliderPrevBtn.onclick = () => {
@@ -123,6 +198,14 @@ function updateSlider() {
     div.className = "slider-item";
     div.style.backgroundImage = `url('${product.imgPath}')`;
     div.dataset.text = product.text;
+
+    if (product.tag) {
+      const badge = document.createElement("span");
+      badge.innerText = product.tag;
+      badge.classList.add("badge");
+      div.append(badge);
+    }
+
     slider.append(div);
   }
   currentSlide = Math.floor(slidesPerPage / 2) + 1;
