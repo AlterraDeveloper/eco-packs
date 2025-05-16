@@ -103,7 +103,6 @@ const productsStretch = [
     "./images/products_stretch/product_stretch_1000x100px.jpg",
     [
       "Промышленная (техническая) стрейч-пленка для ручной обмотки.",
-      "Описание:",
       "Промышленная стрейч-пленка первого сорта, предназначенная для ручной упаковки грузов на паллетах. Обеспечивает надежную фиксацию, защиту от пыли, влаги и механических повреждений при транспортировке и хранении.",
       "Ширина: 500 мм",
       "Толщина: 23 мкм",
@@ -211,7 +210,7 @@ function updateSlider() {
     slidesPerPage - currentSlide - Math.floor(slidesPerPage / 2)
   }))`;
   slider.children[currentSlide - 1].classList.add("active");
-  productDescription.textContent =
+  productDescription.innerHTML =
     slider.children[currentSlide - 1].dataset.text;
 }
 

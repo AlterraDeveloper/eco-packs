@@ -288,7 +288,8 @@ header .contact-inner {
   min-width: calc(100% / var(--slides-per-page));
   height: 420px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-color: white;
   background-position: 50%;
   opacity: 0.15;
   transition: all 0.75s ease-in-out;
@@ -309,7 +310,7 @@ header .contact-inner {
 .products .slider .slider-item .badge {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 20px;
   padding: 20px 30px;
   background: var(--main-green-color);
   box-shadow: -1px 2px 3px rgba(0, 0, 0, 0.3);
@@ -351,14 +352,14 @@ header .contact-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 85%;
+  width: 30%;
   margin-bottom: 30px;
 }
 
 .slider-footer .products-description {
   color: white;
   font-size: 1.8rem;
-  text-align: center;
+  text-align: left;
   text-wrap: wrap;
 }
 
@@ -415,12 +416,16 @@ header .contact-inner {
 .scroll-container {
   overflow: hidden;
   white-space: nowrap;
-  animation: scrollText 25s linear infinite;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: max-content;
   gap: 7em;
+}
+
+.horizontal-scroll {
+  animation: scrollText 25s linear infinite;
+  animation-play-state: ;
 }
 
 .partner-item {
@@ -448,11 +453,12 @@ header .contact-inner {
 .scroll-container .partner-item:nth-child(1),
 .scroll-container .partner-item:nth-child(9) {
   background-image: url("../images/partners/p1.jpg");
+  background-size: 35em;
 }
 .scroll-container .partner-item:nth-child(2),
 .scroll-container .partner-item:nth-child(10) {
   background-image: url("../images/partners/p2.png");
-  background-size: 18em;
+  background-size: 28em;
 }
 .scroll-container .partner-item:nth-child(3),
 .scroll-container .partner-item:nth-child(11) {

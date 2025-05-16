@@ -7,3 +7,10 @@ partnerScrollItems.forEach((item) => {
   duplicatedItem.setAttribute("aria-hidden", true);
   partnersScroll.appendChild(duplicatedItem);
 });
+
+partnersScroll.onpointerdown = () => {
+  partnersScroll.style["animation-play-state"] = "paused";
+};
+partnersScroll.onpointerup = () => {
+  partnersScroll.style["animation-play-state"] = "running";
+};
