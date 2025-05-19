@@ -8,8 +8,15 @@ partnerScrollItems.forEach((item) => {
   partnersScroll.appendChild(duplicatedItem);
 });
 
+let scrollEnableTimer;
+
 partnersScroll.onpointerdown = () => {
   partnersScroll.style["animation-play-state"] = "paused";
+
+  clearTimeout(scrollEnableTimer);
+  scrollEnableTimer = setTimeout(() => {
+    partnersScroll.style["animation-play-state"] = "running";
+  }, 3000);
 };
 partnersScroll.onpointerup = () => {
   partnersScroll.style["animation-play-state"] = "running";

@@ -11,75 +11,167 @@ const industrialTag = "Промышленная";
 const domesticTag = "Пищевая";
 
 const productsBags = [
-  new ProductItem("./images/products_bags/Freezer Bag 250.jpg", " freezer 250"),
-  new ProductItem("./images/products_bags/Freezer Bag 500.jpg", "freezer 500"),
+  new ProductItem(
+    "./images/products_bags/Freezer Bag 250.jpg",
+    [
+      "Пакеты без ручки",
+      "Размер: 25 * 35см",
+      "В рулоне 250pcs, в коробке 20шт.",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_bags/Freezer Bag 500.jpg",
+    [
+      "Пакеты без ручки",
+      "Размер: 25 * 35см",
+      "В рулоне 500pcs, в коробке 12шт.",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
   new ProductItem("./images/products_bags/Пакет Клубничка.jpg"),
   new ProductItem("./images/products_bags/Пакет Мк.jpg"),
   new ProductItem("./images/products_bags/Пакет Шиваки.webp"),
 ];
 
 const productsGarbage = [
-  new ProductItem("./images/products_bags/100х130.jpg", "100 x 130", bioTag),
   new ProductItem(
-    "./images/products_bags/55х70 (бел. с зав.).jpg",
-    "55 x 70",
+    "./images/products_garbage/100х130.png",
+    [
+      "Мешки для мусора",
+      "Размер: 100 * 130см",
+      "В рулоне 10pcs, в коробке 10шт.",
+      "Объём 250л",
+    ].join("<br/><br/>"),
     bioTag
   ),
   new ProductItem(
-    "./images/products_bags/65х80 (с зав.).jpg",
-    "65 x 80",
-    bioTag
-  ),
-  new ProductItem("./images/products_bags/90х130.jpg", "90 x 130", bioTag),
-  new ProductItem(
-    "./images/products_bags/50х60 (бел. с зав.).jpg",
-    "50 x 60",
-    bioTag
-  ),
-  new ProductItem(
-    "./images/products_bags/55х70 (с зав.).jpg",
-    "55 x 70",
-    bioTag
-  ),
-  new ProductItem("./images/products_bags/70х90.jpg", "70 x 90", bioTag),
-  new ProductItem(
-    "./images/products_bags/55х70 (25pcs).jpg",
-    "55 x 70",
-    bioTag
-  ),
-  new ProductItem("./images/products_bags/65х80.jpg", "65 x 80", bioTag),
-  new ProductItem(
-    "./images/products_bags/70х90 (с зав.).jpg",
-    "70 x 90",
+    "./images/products_garbage/55х70 (бел. с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 55 * 70см",
+      "В рулоне 20pcs, в коробке 20шт.",
+      "Объём 45л",
+      "100% первичная пленка HDPE",
+    ].join("<br/><br/>"),
     bioTag
   ),
   new ProductItem(
-    "./images/products_bags/55х70 (35pcs).jpg",
-    "55 x 70",
+    "./images/products_garbage/65х80 (с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 65 * 80см",
+      "В рулоне 15pcs, в коробке 20шт.",
+      "Объём 65л",
+      "100% первичная пленка HDPE",
+    ].join("<br/><br/>"),
     bioTag
   ),
   new ProductItem(
-    "./images/products_bags/65х80 (бел. с зав.).jpg",
-    "65 x 80",
+    "./images/products_garbage/90х130.png",
+    [
+      "Мешки для мусора",
+      "Размер: 90 * 130см",
+      "В рулоне 20pcs, в коробке 15шт.",
+      "Объём 240л",
+    ].join("<br/><br/>"),
     bioTag
   ),
-  new ProductItem("./images/products_bags/80х110.jpg", "80 x 110", bioTag),
   new ProductItem(
-    "./images/products_garbage/Photoroom_20250329_083627.jpeg",
-    "ASIA 30L"
+    "./images/products_garbage/50х60 (бел. с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 50 * 60см",
+      "В рулоне 25pcs, в коробке 20шт.",
+      "Объём 35л",
+      "100% первичная пленка HDPE",
+    ].join("<br/><br/>"),
+    bioTag
   ),
   new ProductItem(
-    "./images/products_garbage/Photoroom_20250329_083648.jpeg",
-    "ASIA 60L"
+    "./images/products_garbage/55х70 (с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 55 * 70см",
+      "В рулоне 20pcs, в коробке 24шт.",
+      "Объём 45л",
+    ].join("<br/><br/>"),
+    bioTag
   ),
   new ProductItem(
-    "./images/products_garbage/Photoroom_20250329_083748.jpeg",
-    "IDEAL 30L"
+    "./images/products_garbage/70х90.png",
+    [
+      "Мешки для мусора",
+      "Размер: 70 * 90см",
+      "В рулоне 10pcs, в коробке 20шт.",
+      "Объём 85л",
+    ].join("<br/><br/>"),
+    bioTag
   ),
   new ProductItem(
-    "./images/products_garbage/Photoroom_20250329_083814.jpeg",
-    "IDEAL 60L"
+    "./images/products_garbage/55х70 (25pcs).png",
+    [
+      "Мешки для мусора",
+      "Размер: 55 * 70см",
+      "В рулоне 25pcs, в коробке 30шт.",
+      "Объём 45л",
+    ].join("<br/><br/>"),
+    bioTag
   ),
+  new ProductItem(
+    "./images/products_garbage/65х80.png",
+    [
+      "Мешки для мусора",
+      "Размер: 65 * 80см",
+      "В рулоне 25pcs, в коробке 20шт.",
+      "Объём 65л",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_garbage/70х90 (с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 70 * 90см",
+      "В рулоне 10pcs, в коробке 20шт.",
+      "Объём 85л",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_garbage/55х70 (35pcs).png",
+    [
+      "Мешки для мусора",
+      "Размер: 55 * 70см",
+      "В рулоне 35pcs, в коробке 20шт.",
+      "Объём 45л",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_garbage/65х80 (бел. с зав.).png",
+    [
+      "Мешки для мусора",
+      "Размер: 65 * 80см",
+      "В рулоне 15pcs, в коробке 20шт.",
+      "Объём 70л",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem(
+    "./images/products_garbage/80х110.png",
+    [
+      "Мешки для мусора",
+      "Размер: 80 * 110см",
+      "В рулоне 10pcs, в коробке 20шт.",
+      "Объём 140л",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
+  new ProductItem("./images/products_garbage/asia_30.png", "ASIA 30L"),
+  new ProductItem("./images/products_garbage/asia_60.png", "ASIA 60L"),
+  new ProductItem("./images/products_garbage/ideal_30.png", "IDEAL 30L"),
+  new ProductItem("./images/products_garbage/ideal_60.png", "IDEAL 60L"),
 ];
 
 const productsDishes = [
@@ -94,44 +186,55 @@ const productsDishes = [
 
 const productsStretch = [
   new ProductItem(
-    "./images/products_stretch/Photoroom_20250329_083722.jpeg",
+    "./images/products_stretch/Photoroom_20250329_083722.png",
     "",
     domesticTag
   ),
 
   new ProductItem(
-    "./images/products_stretch/product_stretch_1000x100px.jpg",
+    "./images/products_stretch/product_stretch_1000x100px.png",
     [
-      "Промышленная (техническая) стрейч-пленка для ручной обмотки.",
-      "Промышленная стрейч-пленка первого сорта, предназначенная для ручной упаковки грузов на паллетах. Обеспечивает надежную фиксацию, защиту от пыли, влаги и механических повреждений при транспортировке и хранении.",
-      "Ширина: 500 мм",
+      // "Промышленная (техническая) стрейч-пленка для ручной обмотки.",
+      // "Промышленная стрейч-пленка первого сорта, предназначенная для ручной упаковки грузов на паллетах. Обеспечивает надежную фиксацию, защиту от пыли, влаги и механических повреждений при транспортировке и хранении.",
+      // "Ширина: 500 мм",
+      // "Толщина: 23 мкм",
+      // "Вес брутто: 3,0 кг",
+      // "Сорт: Первый",
+      // "Материал: Полиэтилен (LLDPE)",
+      // "Тип намотки: Ручная",
+      // "Цвет: Прозрачный",
+      // "Удлинение: до 500%",
+      // "Назначение: упаковка паллет, защита промышленной продукции",
+      "Промышленная (техническая) стрейч-пленка",
+      "Вес (брутто): 3,0 кг",
       "Толщина: 23 мкм",
-      "Вес брутто: 3,0 кг",
       "Сорт: Первый",
-      "Материал: Полиэтилен (LLDPE)",
-      "Тип намотки: Ручная",
-      "Цвет: Прозрачный",
-      "Удлинение: до 500%",
-      "Назначение: упаковка паллет, защита промышленной продукции",
+      "Вид: для ручной обмотки",
     ].join("<br/><br/>"),
     industrialTag
   ),
 
   new ProductItem(
-    "./images/products_stretch/Strejch-plenka-mini-roll.jpg",
+    "./images/products_stretch/Strejch-plenka-mini-roll.png",
     [
-      "Промышленная (техническая) стрейч-пленка для паллетайзера.",
-      "Максимальная надежность для вашей упаковки.",
-      "Надежная и прочная стрейч-пленка первого сорта — идеальное решение для обмотки паллет и тяжелых грузов. Благодаря высокой эластичности и плотности, она надежно фиксирует продукцию, защищая от влаги, пыли и механических повреждений. Отличный выбор для логистики, складов и производственных предприятий.",
-      "Ширина: 500 мм",
+      // "Промышленная (техническая) стрейч-пленка для паллетайзера.",
+      // "Максимальная надежность для вашей упаковки.",
+      // "Надежная и прочная стрейч-пленка первого сорта — идеальное решение для обмотки паллет и тяжелых грузов. Благодаря высокой эластичности и плотности, она надежно фиксирует продукцию, защищая от влаги, пыли и механических повреждений. Отличный выбор для логистики, складов и производственных предприятий.",
+      // "Ширина: 500 мм",
+      // "Толщина: 23 мкм",
+      // "Вес брутто: 16,9 кг",
+      // "Сорт: Первый",
+      // "Материал: Полиэтилен (LLDPE)",
+      // "Тип намотки: Машинная",
+      // "Цвет: Прозрачный",
+      // "Удлинение: до 300%",
+      // "Назначение: упаковка паллет, защита промышленной продукции",
+
+      "Промышленная (техническая) стрейч-пленка",
+      "Вес (брутто): 16,9 кг",
       "Толщина: 23 мкм",
-      "Вес брутто: 16,9 кг",
       "Сорт: Первый",
-      "Материал: Полиэтилен (LLDPE)",
-      "Тип намотки: Машинная",
-      "Цвет: Прозрачный",
-      "Удлинение: до 300%",
-      "Назначение: упаковка паллет, защита промышленной продукции",
+      "Вид: для паллетайзера",
     ].join("<br/><br/>"),
 
     industrialTag
@@ -142,16 +245,42 @@ const productsFoil = [
   new ProductItem("./images/products_foil/Photoroom_20250329_083448.jpeg", ""),
   new ProductItem("./images/products_foil/Photoroom_20250329_083537.jpeg", ""),
   new ProductItem("./images/products_foil/Photoroom_20250329_083557.jpeg", ""),
-  new ProductItem("./images/products_dish/Перчатки.jpg", "Перчатки"),
+  new ProductItem(
+    "./images/products_dish/Перчатки.jpg",
+    [
+      "Одноразовые перчатки",
+      "Универсальный размер.",
+      "В пачке 100pcs, в коробке 60 пачек.",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
   new ProductItem(
     "./images/products_dish/Скатерть Кристалл .jpg",
-    "Скатерть Кристалл"
+    [
+      "Скатерть Кристалл",
+      "Размер: 10м * 120см, с перфорацией каждые 50 см.",
+      "В рулоне 20pcs, в коробке 18шт.",
+    ].join("<br/><br/>"),
+    bioTag
   ),
   new ProductItem(
     "./images/products_dish/Скатерть Хлопок.jpg",
-    "Скатерть Хлопок"
+    [
+      "Скатерть Хлопок",
+      "Размер: 10м * 120см, с перфорацией каждые 50см.",
+      "В рулоне 20pcs, в коробке 24шт.",
+    ].join("<br/><br/>"),
+    bioTag
   ),
-  new ProductItem("./images/products_dish/Скатерть Шелк.jpg", "Скатерть Шелк"),
+  new ProductItem(
+    "./images/products_dish/Скатерть Шелк.jpg",
+    [
+      "Скатерть Шелк",
+      "Размер: 10м * 120см, с перфорацией каждые 50см.",
+      "В рулоне 20pcs, в коробке 18шт.",
+    ].join("<br/><br/>"),
+    bioTag
+  ),
 ];
 
 let products = [];
@@ -210,8 +339,7 @@ function updateSlider() {
     slidesPerPage - currentSlide - Math.floor(slidesPerPage / 2)
   }))`;
   slider.children[currentSlide - 1].classList.add("active");
-  productDescription.innerHTML =
-    slider.children[currentSlide - 1].dataset.text;
+  productDescription.innerHTML = slider.children[currentSlide - 1].dataset.text;
 }
 
 function getCssVar(name) {
