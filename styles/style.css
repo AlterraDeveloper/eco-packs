@@ -352,7 +352,7 @@ header .contact-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 40%;
   margin-bottom: 30px;
 }
 
@@ -424,8 +424,7 @@ header .contact-inner {
 }
 
 .horizontal-scroll {
-  animation: scrollText 25s linear infinite;
-  animation-play-state: ;
+  animation: scrollText 30s linear infinite;
 }
 
 .partner-item {
@@ -451,44 +450,59 @@ header .contact-inner {
 }
 
 .scroll-container .partner-item:nth-child(1),
-.scroll-container .partner-item:nth-child(9) {
+.scroll-container .partner-item:nth-child(12) {
   background-image: url("../images/partners/p1.jpg");
   background-size: 35em;
 }
 .scroll-container .partner-item:nth-child(2),
-.scroll-container .partner-item:nth-child(10) {
+.scroll-container .partner-item:nth-child(13) {
   background-image: url("../images/partners/p2.png");
   background-size: 28em;
 }
 .scroll-container .partner-item:nth-child(3),
-.scroll-container .partner-item:nth-child(11) {
+.scroll-container .partner-item:nth-child(14) {
   background-image: url("../images/partners/p3.png");
   background-size: 30em;
 }
 .scroll-container .partner-item:nth-child(4),
-.scroll-container .partner-item:nth-child(12) {
+.scroll-container .partner-item:nth-child(15) {
   background-image: url("../images/partners/p9.png");
   background-size: 25em;
 }
 .scroll-container .partner-item:nth-child(5),
-.scroll-container .partner-item:nth-child(13) {
+.scroll-container .partner-item:nth-child(16) {
   background-image: url("../images/partners/p10.png");
   background-size: 55em;
 }
 .scroll-container .partner-item:nth-child(6),
-.scroll-container .partner-item:nth-child(14) {
+.scroll-container .partner-item:nth-child(17) {
   background-image: url("../images/partners/p11.png");
   background-size: 35em;
 }
 .scroll-container .partner-item:nth-child(7),
-.scroll-container .partner-item:nth-child(15) {
+.scroll-container .partner-item:nth-child(18) {
   background-image: url("../images/partners/p12.jpg");
   background-size: 25em;
 }
 .scroll-container .partner-item:nth-child(8),
-.scroll-container .partner-item:nth-child(16) {
+.scroll-container .partner-item:nth-child(19) {
   background-image: url("../images/partners/p13.png");
   background-size: 22em;
+}
+.scroll-container .partner-item:nth-child(9),
+.scroll-container .partner-item:nth-child(20) {
+  background-image: url("../images/partners/p14.png");
+  background-size: 36em;
+}
+.scroll-container .partner-item:nth-child(10),
+.scroll-container .partner-item:nth-child(21) {
+  background-image: url("../images/partners/p15.png");
+  background-size: 32em;
+}
+.scroll-container .partner-item:nth-child(11),
+.scroll-container .partner-item:nth-child(22) {
+  background-image: url("../images/partners/p16.png");
+  background-size: 18em;
 }
 
 footer {

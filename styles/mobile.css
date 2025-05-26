@@ -189,44 +189,59 @@
   }
 
   .scroll-container .partner-item:nth-child(1),
-  .scroll-container .partner-item:nth-child(9) {
+  .scroll-container .partner-item:nth-child(12) {
     background-image: url("../images/partners/p1.jpg");
     background-size: 22em;
   }
   .scroll-container .partner-item:nth-child(2),
-  .scroll-container .partner-item:nth-child(10) {
+  .scroll-container .partner-item:nth-child(13) {
     background-image: url("../images/partners/p2.png");
     background-size: 20em;
   }
   .scroll-container .partner-item:nth-child(3),
-  .scroll-container .partner-item:nth-child(11) {
+  .scroll-container .partner-item:nth-child(14) {
     background-image: url("../images/partners/p3.png");
     background-size: 20em;
   }
   .scroll-container .partner-item:nth-child(4),
-  .scroll-container .partner-item:nth-child(12) {
+  .scroll-container .partner-item:nth-child(15) {
     background-image: url("../images/partners/p9.png");
     background-size: 18em;
   }
   .scroll-container .partner-item:nth-child(5),
-  .scroll-container .partner-item:nth-child(13) {
+  .scroll-container .partner-item:nth-child(16) {
     background-image: url("../images/partners/p5.png");
     background-size: 18em;
   }
   .scroll-container .partner-item:nth-child(6),
-  .scroll-container .partner-item:nth-child(14) {
+  .scroll-container .partner-item:nth-child(17) {
     background-image: url("../images/partners/p6.png");
     background-size: 18em;
   }
   .scroll-container .partner-item:nth-child(7),
-  .scroll-container .partner-item:nth-child(15) {
+  .scroll-container .partner-item:nth-child(18) {
     background-image: url("../images/partners/p12.jpg");
     background-size: 20em;
   }
   .scroll-container .partner-item:nth-child(8),
-  .scroll-container .partner-item:nth-child(16) {
+  .scroll-container .partner-item:nth-child(19) {
     background-image: url("../images/partners/p13.png");
     background-size: 18em;
+  }
+  .scroll-container .partner-item:nth-child(9),
+  .scroll-container .partner-item:nth-child(20) {
+    background-image: url("../images/partners/p14.png");
+    background-size: 20em;
+  }
+  .scroll-container .partner-item:nth-child(10),
+  .scroll-container .partner-item:nth-child(21) {
+    background-image: url("../images/partners/p15.png");
+    background-size: 20em;
+  }
+  .scroll-container .partner-item:nth-child(11),
+  .scroll-container .partner-item:nth-child(22) {
+    background-image: url("../images/partners/p16.png");
+    background-size: 14em;
   }
 
   footer {

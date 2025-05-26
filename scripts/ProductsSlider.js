@@ -14,7 +14,7 @@ const productsBags = [
   new ProductItem(
     "./images/products_bags/Freezer Bag 250.jpg",
     [
-      "Пакеты без ручки",
+      "Пакеты для заморозки",
       "Размер: 25 * 35см",
       "В рулоне 250pcs, в коробке 20шт.",
     ].join("<br/><br/>"),
@@ -23,15 +23,24 @@ const productsBags = [
   new ProductItem(
     "./images/products_bags/Freezer Bag 500.jpg",
     [
-      "Пакеты без ручки",
+      "Пакеты для заморозки",
       "Размер: 25 * 35см",
       "В рулоне 500pcs, в коробке 12шт.",
     ].join("<br/><br/>"),
     bioTag
   ),
-  new ProductItem("./images/products_bags/Пакет Клубничка.jpg"),
-  new ProductItem("./images/products_bags/Пакет Мк.jpg"),
-  new ProductItem("./images/products_bags/Пакет Шиваки.webp"),
+  new ProductItem(
+    "./images/products_bags/Пакет Клубничка.jpg",
+    ['Пакет "Клубника"', "В упаковке 1320 шт."].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_bags/Пакет Мк.png",
+    ['Пакет с ручкой "М"', "В упаковке 2880 шт."].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_bags/Пакет Шиваки.webp",
+    ['Пакет "Шиваки"', "В упаковке 1320 шт."].join("<br/><br/>")
+  ),
 ];
 
 const productsGarbage = [
@@ -63,7 +72,6 @@ const productsGarbage = [
       "Размер: 65 * 80см",
       "В рулоне 15pcs, в коробке 20шт.",
       "Объём 65л",
-      "100% первичная пленка HDPE",
     ].join("<br/><br/>"),
     bioTag
   ),
@@ -155,6 +163,7 @@ const productsGarbage = [
       "Размер: 65 * 80см",
       "В рулоне 15pcs, в коробке 20шт.",
       "Объём 70л",
+      "100% первичная пленка HDPE",
     ].join("<br/><br/>"),
     bioTag
   ),
@@ -168,26 +177,81 @@ const productsGarbage = [
     ].join("<br/><br/>"),
     bioTag
   ),
-  new ProductItem("./images/products_garbage/asia_30.png", "ASIA 30L"),
-  new ProductItem("./images/products_garbage/asia_60.png", "ASIA 60L"),
-  new ProductItem("./images/products_garbage/ideal_30.png", "IDEAL 30L"),
-  new ProductItem("./images/products_garbage/ideal_60.png", "IDEAL 60L"),
+  new ProductItem(
+    "./images/products_garbage/asia_30.png",
+    'Мешки для мусора без завязки "Азия" 30 л, в рулоне 30 шт.'
+  ),
+  new ProductItem(
+    "./images/products_garbage/asia_60.png",
+    'Мешки для мусора без завязки "Азия" 60 л, в рулоне 30 шт.'
+  ),
+  new ProductItem(
+    "./images/products_garbage/ideal_30.png",
+    'Мешки для мусора без завязки "Идеал" 30 л, в рулоне 20 шт.'
+  ),
+  new ProductItem(
+    "./images/products_garbage/ideal_60.png",
+    'Мешки для мусора без завязки "Идеал" 60 л, в рулоне 20 шт.'
+  ),
 ];
 
 const productsDishes = [
-  new ProductItem("./images/products_dish/3792.jpg", ""),
-  new ProductItem("./images/products_dish/3793.jpg", ""),
-  new ProductItem("./images/products_dish/3801.jpg", ""),
-  new ProductItem("./images/products_dish/3802.jpg", ""),
-  new ProductItem("./images/products_dish/3803.jpg", ""),
-  new ProductItem("./images/products_dish/3804.jpg", ""),
-  new ProductItem("./images/products_dish/3805.jpg", ""),
+  new ProductItem(
+    "./images/products_dish/3792.jpg",
+    [
+      "Тарелка пластиковая одноразовая",
+      "d = 22,5 см",
+      "в коробке 500 шт.",
+    ].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_dish/3793.jpg",
+    [
+      "Тарелка пластиковая одноразовая",
+      "d = 17,5 см",
+      "в коробке 1000 шт.",
+    ].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_dish/3801.jpg",
+    [
+      "Вилка пластиковая одноразовая белая",
+      "длина 15 см",
+      "в коробке 2000 шт.",
+    ].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_dish/3802.jpg",
+    [
+      "Ложка пластиковая одноразовая белая",
+      "длина 15 см",
+      "в коробке 2000 шт.",
+    ].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_dish/3803.jpg",
+    [
+      "Ложка пластиковая одноразовая прозрачная",
+      "длина 15 см",
+      "в коробке 2000 шт.",
+    ].join("<br/><br/>")
+  ),
+  new ProductItem(
+    "./images/products_dish/3805.jpg",
+    [
+      "Вилка пластиковая одноразовая прозрачная",
+      "длина 15 см",
+      "в коробке 2000 шт.",
+    ].join("<br/><br/>")
+  ),
 ];
 
 const productsStretch = [
   new ProductItem(
     "./images/products_stretch/Photoroom_20250329_083722.png",
-    "",
+    ['Пленка пищевая "Multipak"', "Размеры: 20 м, 50 м и 100 м"].join(
+      "<br/><br/>"
+    ),
     domesticTag
   ),
 
@@ -242,9 +306,9 @@ const productsStretch = [
 ];
 
 const productsFoil = [
-  new ProductItem("./images/products_foil/Photoroom_20250329_083448.jpeg", ""),
-  new ProductItem("./images/products_foil/Photoroom_20250329_083537.jpeg", ""),
-  new ProductItem("./images/products_foil/Photoroom_20250329_083557.jpeg", ""),
+  new ProductItem("./images/products_foil/Photoroom_20250329_083448.jpeg", "Фольга для запекания \"Alufolie\", 10 м"),
+  new ProductItem("./images/products_foil/Photoroom_20250329_083537.jpeg", "Фольга для запекания \"Alufolie\", 5 м"),
+  new ProductItem("./images/products_foil/Photoroom_20250329_083557.jpeg", "Фольга для запекания \"Alufolie\", 7.5 м"),
   new ProductItem(
     "./images/products_dish/Перчатки.jpg",
     [
