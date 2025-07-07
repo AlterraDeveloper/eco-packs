@@ -4,7 +4,7 @@
   }
 
   header {
-    grid-template-rows: 280px repeat(2, 120px);
+    grid-template-rows: 200px 80px;
     grid-template-columns: 1fr;
     padding: 20px;
     margin: 10px 10px 0 10px;
