@@ -66,16 +66,13 @@ header nav .menu-item.active {
 }
 
 .logo {
-  background-color: #6cbf65;
   color: white;
-  padding: 10px 20px;
-  font-size: 1.8rem;
   border-radius: 50px;
   width: fit-content;
 }
 
-.logo img {
-  width: 120px;
+header .logo img {
+  width: 300px;
 }
 
 .contact {
@@ -514,6 +511,12 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 25px;
+}
+
+footer .logo img {
+  width: 200px;
+  background-color: white;
+  border-radius: 50px;
 }
 
 .footer-block {
