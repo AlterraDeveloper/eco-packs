@@ -139,7 +139,7 @@ const translations = {
         "kg": "Фольга",
         "en": "Foil",
     },
-    "SolutionsSectionTitle" : {
+    "SolutionsSectionTitle": {
         "ru": "Решения для вашего бизнеса",
         "kg": "",
         "en": "Solutions for your business",
@@ -171,6 +171,41 @@ const translations = {
     },
     "Markets": {
         "ru": "Супермаркеты\n и торговля",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "aboutCompanyTitle": {
+        "ru": "О компании Green Pack",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "aboutCompanyText": {
+        "ru": "С 2007 года мы обеспечиваем бизнес качественными расходными материалами. Собственное сотрудничество с проверенными производителями, широкий ассортимент, гибкие условия и быстрая доставка по всему Кыргызстану.",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "WhyChooseUsTitle": {
+        "ru": "Почему выбирают нас",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "WhyChoose1": {
+        "ru": "Качественные товары\n от проверенных поставщиков",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "WhyChoose2": {
+        "ru": "Конкурентные оптовые цены\n и персональный подход",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "WhyChoose3": {
+        "ru": "Наличие товара на складе\n и быстрая отгрузка",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "WhyChoose4": {
+        "ru": "Работаем с юр. и физ.лицами\n по всему Кыргызстану",
         "kg": "",
         "en": "Solutions for your business",
     },
