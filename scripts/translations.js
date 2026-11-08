@@ -69,7 +69,7 @@ const translations = {
         "kg": "Жылдам жана акысыз",
         "en": "Fast and free",
     },
-     "PackTitle": {
+    "PackTitle": {
         "ru": "Широкий ассортимент",
         "kg": "Кең ассортимент",
         "en": "Wide range",
@@ -98,5 +98,45 @@ const translations = {
         "ru": "Для каждого клиента",
         "kg": "Ар бир клиент үчүн",
         "en": "For each client",
+    },
+    "CatalogSectionTitle": {
+        "ru": "Категории продукции",
+        "kg": "Продукциянын категориялар",
+        "en": "Production categories",
+    },
+    "GetDetails": {
+        "ru": "Подробнее",
+        "kg": "Толугураак",
+        "en": "Get details",
+    },
+    "CatalogItem1": {
+        "ru": "Пакеты для мусора",
+        "kg": "Чүпүрөк баштыкчалары",
+        "en": "Garbage bags",
+    },
+    "CatalogItem2": {
+        "ru": "Стретч пленка",
+        "kg": "Стретч пленка",
+        "en": "Stretch film",
+    },
+    "CatalogItem3": {
+        "ru": "Пакеты и мешки",
+        "kg": "Сумкалар жана баштыкчалар",
+        "en": "Bags and sacks",
+    },
+    "CatalogItem4": {
+        "ru": "Одноразовая посуда",
+        "kg": "",
+        "en": "",
+    },
+    "CatalogItem5": {
+        "ru": "Перчатки",
+        "kg": "",
+        "en": "Gloves",
+    },
+    "CatalogItem6": {
+        "ru": "Фольга",
+        "kg": "Фольга",
+        "en": "Foil",
     },
 }

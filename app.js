@@ -17,6 +17,11 @@ function switchLanguage(targetLang) {
     localStorage.setItem(LanguageStorageKey, targetLang);
     const translatableItems = [...document.querySelectorAll("*")].filter(x => x.dataset.translate);
     translatableItems.forEach(item => {
+        const translation = translations[item.dataset.translate];
+        if (!translation) {
+            console.warn(`No translation found for key: ${item.dataset.translate}`);
+            return;
+        }
         item.innerText = translations[item.dataset.translate][targetLang] || "?";
     });
 }
