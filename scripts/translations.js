@@ -139,4 +139,39 @@ const translations = {
         "kg": "Фольга",
         "en": "Foil",
     },
+    "SolutionsSectionTitle" : {
+        "ru": "Решения для вашего бизнеса",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "RestAndCafe": {
+        "ru": "Рестораны\n и кафе",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "Hotels": {
+        "ru": "Гостиницы\n и отели",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "Cleaning": {
+        "ru": "Клининг\n и уборка",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "Fabrics": {
+        "ru": "Производство\n и фабрики",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "Logistics": {
+        "ru": "Логистика\n и склады",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
+    "Markets": {
+        "ru": "Супермаркеты\n и торговля",
+        "kg": "",
+        "en": "Solutions for your business",
+    },
 }

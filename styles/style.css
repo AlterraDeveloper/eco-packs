@@ -1,3 +1,11 @@
+.in-progress {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  font-size: 30px;
+}
+
 :root {}
 
 * {
@@ -205,8 +213,8 @@ main {
 }
 
 .catalog-section .catalog-item {
-  width: calc(100% / 6 - 80px);
-  height: 320px;
+  width: calc(100% / 6 - 30px);
+  height: 400px;
   border: 2px solid #dde0dc;
   border-radius: 12px;
   display: flex;
@@ -226,4 +234,70 @@ main {
 
 .catalog-section .catalog-item button {
   padding: 5px 20px;
+}
+
+.solutions-section {
+  width: 100%;
+  padding: 10px 60px;
+}
+
+.solutions-section h2 {
+  font-size: 32px;
+  text-align: left;
+}
+
+.solutions-section .solutions-items {
+  display: flex;
+  gap: 20px;
+}
+
+.solutions-items .solutions-item {
+  width: calc(100% / 6);
+  height: 280px;
+  border-radius: 12px;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.solutions-items .solutions-item:nth-child(1) {
+  background-image: url("../images/cafe.jpg");
+}
+
+
+.solutions-items .solutions-item:nth-child(2) {
+  background-image: url("../images/hotel.jpg");
+}
+
+.solutions-items .solutions-item:nth-child(3) {
+  background-image: url("../images/cleaning.jpg");
+  background-position: 90% 50%;
+}
+
+.solutions-items .solutions-item:nth-child(4) {
+  background-image: url("../images/fabric.png");
+}
+
+.solutions-items .solutions-item:nth-child(5) {
+  background-image: url("../images/logistics.jpg");
+}
+
+.solutions-items .solutions-item:nth-child(6) {
+  background-image: url("../images/market.jpg");
+  background-position: 40% 50%;
+}
+
+.solutions-items .solutions-item span {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  bottom: 0px;
+  left: 0px;
+  background: linear-gradient(180deg,rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 100%);
+  height: 30%;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  padding: 25px;
 }
